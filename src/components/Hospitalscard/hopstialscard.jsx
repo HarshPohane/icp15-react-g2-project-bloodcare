@@ -1,0 +1,1 @@
+import "./Hospitalscard.css";
