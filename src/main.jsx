@@ -1,4 +1,3 @@
-
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes } from "react-router";
 import App from './App.jsx'
@@ -9,4 +8,4 @@ createRoot(document.getElementById('root')).render(
     <App />
     </Routes>
   </BrowserRouter>
-)
+);
