@@ -1,0 +1,32 @@
+.common-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+
+  margin-top: 18px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #d90429;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.common-button:hover {
+  background: #a90320;
+}
+
+.common-button:disabled {
+  background: #16803c;
+  cursor: not-allowed;
+}
