@@ -1,5 +1,4 @@
 import "./Button.css";
-
 function Button({
   children,
   onClick,
@@ -24,6 +23,11 @@ function Button({
       onClick={onClick}
       disabled={disabled}
     >
+
+function Button({ children, onClick, type = "button" }) {
+  return (
+    <button type={type} className="custom-button" onClick={onClick}>
+
       {children}
     </button>
   );
