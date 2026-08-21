@@ -1,4 +1,6 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -38,6 +40,7 @@ function App() {
       </>
     );
   }
+  
 
 }
 export default App;
