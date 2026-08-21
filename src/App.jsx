@@ -1,4 +1,9 @@
 import React from "react";
+import Navbar from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer";
+
+import Login from "./views/Login/Login";
+import Signup from "./views/Signup/Signup";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Contact from "./views/Contact/Contact";
