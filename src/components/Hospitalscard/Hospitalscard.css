@@ -1,87 +1,109 @@
 .hospital-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  background: #fff;
-  border: 1px solid var(--hospital-line);
+  background: white;
+
+  border: 1px solid #f0cdd2;
+
   border-radius: 14px;
+
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(74, 27, 38, 0.06);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+
+  transition: 0.3s;
 }
 
 .hospital-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--hospital-shadow);
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(217, 4, 41, 0.15);
 }
 
 .hospital-card-image {
-  position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #f4e8ea;
-}
+  height: 180px;
 
-.hospital-card-image img {
-  width: 100%;
-  height: 100%;
   display: block;
+
   object-fit: cover;
 }
 
-.hospital-card-image span {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  padding: 5px 9px;
-  color: #fff;
-  background: var(--hospital-red);
-  border-radius: 999px;
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-}
-
 .hospital-card-content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
   padding: 20px;
 }
 
-.hospital-card h2 {
+.hospital-card h3 {
   margin: 0 0 8px;
-  color: var(--hospital-ink);
-  font-size: 1.15rem;
-  line-height: 1.25;
+
+  color: #222;
+
+  font-size: 19px;
 }
 
 .hospital-card p {
-  margin: 0 0 10px;
-  color: var(--hospital-muted);
-  font-size: 0.84rem;
-  line-height: 1.5;
+  color: #666;
+
+  font-size: 14px;
 }
 
-.hospital-location {
-  min-height: 2.9em;
+.hospital-city {
+  color: #d90429 !important;
+
+  font-weight: bold;
 }
 
-.hospital-call {
-  margin-top: auto;
-  display: block;
-  padding: 11px;
-  text-align: center;
-  text-decoration: none;
-  background: var(--hospital-red);
-  color: #fff;
-  border-radius: 7px;
-  font-size: 0.88rem;
-  font-weight: 800;
-  transition: background 180ms ease, transform 180ms ease;
+.hospital-rating {
+  color: #e5a400 !important;
+
+  font-weight: bold;
 }
 
-.hospital-call:hover {
-  background: var(--hospital-red-dark);
-  transform: translateY(-1px);
+.hospital-emergency,
+.hospital-regular {
+  display: inline-block;
+
+  padding: 7px 10px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.hospital-emergency {
+  background: #ffe6eb;
+
+  color: #d90429;
+}
+
+.hospital-regular {
+  background: #e7f7ed;
+
+  color: #16803c;
+}
+
+.hospital-card h4 {
+  margin-top: 20px;
+}
+
+.blood-groups {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.blood-groups span {
+  padding: 6px 10px;
+
+  background: #ffe6eb;
+
+  color: #d90429;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+
+  font-weight: bold;
 }

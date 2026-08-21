@@ -1,23 +1,66 @@
-import "./Hospitalscard.css";
+import Button from "../Button/Button";
+
+import "./HospitalCard.css";
 
 function HospitalCard({ hospital }) {
-	return (
-		<article className="hospital-card">
-			<div className="hospital-card-image">
-				<img src={hospital.image} alt={`${hospital.name} building`} />
-				{hospital.emergency && <span>Emergency</span>}
-			</div>
-			<div className="hospital-card-content">
-				<h2>{hospital.name}</h2>
-				<p className="hospital-location">{hospital.city} | {hospital.address}</p>
-				<p>Rating: {hospital.rating} / 5</p>
-				<p>Blood groups: {hospital.bloodGroups.join(", ")}</p>
-				<a className="hospital-call" href={`tel:${hospital.phone}`}>
-					Call {hospital.phone}
-				</a>
-			</div>
-		</article>
-	);
+
+  return (
+    <div className="hospital-card">
+
+      <img
+        src={hospital.image}
+        alt={hospital.name}
+        className="hospital-card-image"
+      />
+
+      <div className="hospital-card-content">
+
+        <h3>{hospital.name}</h3>
+
+        <p className="hospital-city">
+          📍 {hospital.city}
+        </p>
+
+        <p>
+          {hospital.address}
+        </p>
+
+        <p className="hospital-rating">
+          ⭐ {hospital.rating}
+        </p>
+
+        {hospital.emergency ? (
+          <span className="hospital-emergency">
+            Emergency Available
+          </span>
+        ) : (
+          <span className="hospital-regular">
+            Regular Service
+          </span>
+        )}
+
+        <h4>Blood Groups</h4>
+
+        <div className="blood-groups">
+
+          {hospital.bloodGroups.map(
+            (blood) => (
+              <span key={blood}>
+                {blood}
+              </span>
+            )
+          )}
+
+        </div>
+
+        <Button href={`tel:${hospital.phone}`}>
+          Call Hospital
+        </Button>
+
+      </div>
+
+    </div>
+  );
 }
 
 export default HospitalCard;
