@@ -1,11 +1,13 @@
 import Button from "../Button/Button";
 
-import "./HospitalCard.css";
+
+import "./Hospitalscard.css";
 
 function HospitalCard({ hospital }) {
 
   return (
     <div className="hospital-card">
+
 
       <img
         src={hospital.image}

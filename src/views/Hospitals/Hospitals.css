@@ -1,6 +1,8 @@
 .hospital-page {
   min-height: 100vh;
+
   padding: 50px 7%;
+
   background: #fff7f8;
 }
 
@@ -9,30 +11,40 @@
 
 .hospital-heading {
   text-align: center;
+
   margin-bottom: 35px;
 }
 
 .hospital-title {
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 8px;
 
   color: #d90429;
+
   font-size: 13px;
+
   font-weight: bold;
 }
 
 .hospital-title img {
   width: 28px;
+
   height: 28px;
+
   object-fit: contain;
 }
 
 .hospital-heading h1 {
   margin: 10px 0;
-  color: #222;
+
   font-size: 38px;
+
+  color: #222;
 }
 
 .hospital-heading p {
@@ -44,9 +56,13 @@
 
 .hospital-filters {
   display: flex;
+
   align-items: center;
+
   gap: 15px;
+
   flex-wrap: wrap;
+
   margin-bottom: 20px;
 }
 
@@ -57,7 +73,9 @@
   width: 350px;
 
   display: flex;
+
   align-items: center;
+
   gap: 10px;
 
   padding: 12px 15px;
@@ -71,15 +89,18 @@
 
 .hospital-search img {
   width: 20px;
+
   height: 20px;
+
   object-fit: contain;
 }
 
 .hospital-search input {
   width: 100%;
+
   border: none;
+
   outline: none;
-  font-size: 14px;
 }
 
 
@@ -102,10 +123,13 @@
 
 .emergency-filter {
   display: flex;
+
   align-items: center;
+
   gap: 7px;
 
   font-size: 14px;
+
   cursor: pointer;
 }
 
@@ -115,7 +139,9 @@
 
 .emergency-filter img {
   width: 20px;
+
   height: 20px;
+
   object-fit: contain;
 }
 
@@ -124,6 +150,7 @@
 
 .hospital-result {
   color: #666;
+
   font-size: 14px;
 }
 
@@ -149,9 +176,9 @@
 .no-hospital {
   grid-column: 1 / -1;
 
-  text-align: center;
-
   padding: 50px;
+
+  text-align: center;
 
   background: white;
 
@@ -160,7 +187,9 @@
 
 .no-hospital img {
   width: 60px;
+
   height: 60px;
+
   object-fit: contain;
 }
 
@@ -178,7 +207,8 @@
 @media (max-width: 900px) {
 
   .hospital-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 
 }
