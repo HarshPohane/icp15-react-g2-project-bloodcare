@@ -78,7 +78,9 @@ function Signup() {
           required
         />
 
-        
+        <Button type="submit">
+          Register
+        </Button>
 
         <p>
           Already registered?
