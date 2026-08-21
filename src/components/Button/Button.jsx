@@ -1,17 +1,9 @@
 import "./Button.css";
-function Button({
-  children,
-  onClick,
-  disabled = false,
-  href
-}) {
 
+function Button({ children, onClick, disabled = false, href, type = "button" }) {
   if (href) {
     return (
-      <a
-        href={href}
-        className="common-button"
-      >
+      <a href={href} className="common-button">
         {children}
       </a>
     );
@@ -19,15 +11,11 @@ function Button({
 
   return (
     <button
+      type={type}
       className="common-button"
       onClick={onClick}
       disabled={disabled}
     >
-
-function Button({ children, onClick, type = "button" }) {
-  return (
-    <button type={type} className="custom-button" onClick={onClick}>
-
       {children}
     </button>
   );
