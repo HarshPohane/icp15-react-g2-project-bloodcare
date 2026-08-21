@@ -66,9 +66,9 @@ function Hospitals() {
             alt=""
             aria-hidden="true"
           />
-          <span>HEALTHCARE NETWORK</span>
+          <span>BloodCare</span>
         </div>
-        <h1>Find Hospitals</h1>
+        <h2>Find Hospitals</h2>
         <p>Find trusted hospitals and blood services near you.</p>
       </div>
 
