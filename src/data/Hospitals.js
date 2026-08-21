@@ -193,7 +193,31 @@ const hospitalData = [
     emergency: true,
     image: "https://imgs.search.brave.com/N2BMcD73P_YTgeFgypFSeq47tdPdORA3z761Dug5D_g/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kb2N0/b3JsaXN0aW5naW5n/ZXN0aW9ucHIuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L2RvY3Rv/cnByb2ZpbGVwaWMv/MTY3MDUwMDc0NTY3/OF9Ib3NwaXRhbFBy/b2ZpbGVJbWFnZV9D/YXB0dXJlLlBORw",
     bloodGroups: ["A+", "A-", "B+", "O+", "O-", "AB+"]
-  }
+  },
+
+  {
+    "id": 12,
+    "name": "Civil Hospital Nashik",
+    "city": "Nashik",
+    "address": "Trimbak Road, Nashik",
+    "phone": "02532570000",
+    "rating": 4.1,
+    "emergency": true,
+    "image": "/images/hospital12.jpg",
+    "bloodGroups": ["A+", "B+", "O+", "O-"]
+  },
+
+  {
+    "id": 13,
+    "name": "Medicover Hospital",
+    "city": "Nashik",
+    "address": "Mumbai Naka, Nashik",
+    "phone": "02536688888",
+    "rating": 4.4,
+    "emergency": true,
+    "image": "/images/hospital13.jpg",
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-", "AB+"]
+  },
 ];
 
 export default hospitalData;
