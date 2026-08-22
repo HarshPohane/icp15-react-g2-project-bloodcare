@@ -227,6 +227,30 @@ function Donors() {
             </div>
           </div>
         </section>
+
+        
+        {/* Tips */}
+        <div className="tips-container">
+          <h1 className="tips-head">Tips</h1>
+          <p className="tips-para">
+            Here are some tips to put your mind at ease during the
+            <br /> blood donation process
+          </p>
+
+          <div className="list-container">
+            {Donorinfos.map((Donorinfo, index) => (
+              <div key={Donorinfo.title} className="list-elements">
+                <h1 className="tips-listhead">{Donorinfo.title}</h1>
+                <ul>
+                  <li className="tips-list">{Donorinfo["info-one"]}</li>
+                  <li className="tips-list">{Donorinfo["info-two"]}</li>
+                  <li className="tips-list">{Donorinfo["info-three"]}</li>
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
     </div>
   );
 }
