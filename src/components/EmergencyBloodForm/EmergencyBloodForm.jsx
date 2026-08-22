@@ -10,6 +10,19 @@ function EmergencyBloodForm() {
   const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
 
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert("Emergency Blood Request Submitted!");
+
+    console.log(patientName);
+    console.log(bloodGroup);
+    console.log(units);
+    console.log(hospital);
+    console.log(location);
+    console.log(phone);
+  };
 
   return (
     <div className="emergency-container">
