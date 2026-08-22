@@ -2,8 +2,37 @@ import React from "react";
 import "./Donors.css";
 
 function Donors() {
+  const [fullName, setFullName] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState("");
+  const [bloodGroup, setBloodGroup] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [weight, setWeight] = useState("");
+  const [city, setCity] = useState("");
+  const [lastDonation, setLastDonation] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setSubmitted(true);
+
+    console.log({
+      fullName,
+      age,
+      gender,
+      bloodGroup,
+      phone,
+      email,
+      weight,
+      city,
+      lastDonation,
+    });
+  };
   return (
     <div className="donor-page">
+      {/* hero section */}
       <section className="donor-hero">
         <div className="hero-content">
           <p className="hero-tag">💚 SAVE A LIFE</p>
