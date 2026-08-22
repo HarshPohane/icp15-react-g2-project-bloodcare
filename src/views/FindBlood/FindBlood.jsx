@@ -2,6 +2,7 @@ import React ,{useState} from "react";
 import "./FindBlood.css";
 import bloodDatas from './../../utils/findblood.json'
 import CardFindBlood from "./../../components/CardFindBlood/CardFindBlood";
+import EmergencyBloodForm from "./../../components/EmergencyBloodForm/EmergencyBloodForm";
 
 function FindBlood() {
 
@@ -121,6 +122,10 @@ function FindBlood() {
 
         </div>
 
+      </section>
+
+        <section>
+        <EmergencyBloodForm/>
       </section>
 
 
