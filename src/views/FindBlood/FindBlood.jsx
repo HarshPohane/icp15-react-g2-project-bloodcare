@@ -7,6 +7,19 @@ function FindBlood() {
   const [location, setLocation] = useState("");
 
   
+  const filteredBlood = bloodDatas.filter((blood) => {
+    const groupMatch =
+      bloodGroup === "" || blood.bloodGroup === bloodGroup;
+
+    const locationMatch = blood.location
+      .toLowerCase()
+      .includes(location.toLowerCase());
+
+    return groupMatch && locationMatch;
+  });
+
+
+  
  
   return (
     <div>
