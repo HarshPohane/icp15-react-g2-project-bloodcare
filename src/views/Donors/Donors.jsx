@@ -1,5 +1,6 @@
 import React from "react";
 import "./Donors.css";
+import Donorinfos from "./../../utils/donorinfos.json";
 
 function Donors() {
   const [fullName, setFullName] = useState("");
