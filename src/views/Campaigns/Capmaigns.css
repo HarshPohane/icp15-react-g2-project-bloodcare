@@ -1,0 +1,191 @@
+.campaign-page {
+  min-height: 100vh;
+  padding: 50px 7%;
+  background: #fff5f5;
+}
+
+
+/* Heading */
+
+.campaign-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.campaign-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: #d90429;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.campaign-title img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.campaign-heading h1 {
+  margin: 10px 0;
+  color: #222;
+  font-size: 36px;
+}
+
+.campaign-heading p {
+  color: #666;
+}
+
+
+/* Filters */
+
+.campaign-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* Search */
+
+.campaign-search {
+  width: 350px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 15px;
+
+  background: white;
+
+  border: 1px solid #f0cdd2;
+  border-radius: 8px;
+}
+
+.campaign-search img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.campaign-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  font-size: 14px;
+}
+
+
+/* Select */
+
+.campaign-filters select {
+  padding: 12px 15px;
+
+  background: white;
+
+  border: 1px solid #f0cdd2;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+/* Result */
+
+.campaign-result {
+  margin-bottom: 20px;
+
+  color: #666;
+
+  font-size: 14px;
+}
+
+.campaign-result strong {
+  color: #d90429;
+}
+
+
+/* Grid */
+
+.campaign-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* No Campaign */
+
+.no-campaign {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 50px;
+
+  background: white;
+
+  border-radius: 12px;
+}
+
+.no-campaign img {
+  width: 60px;
+  height: 60px;
+}
+
+.no-campaign h3 {
+  color: #d90429;
+}
+
+.no-campaign p {
+  color: #666;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .campaign-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .campaign-page {
+    padding: 30px 15px;
+  }
+
+  .campaign-heading h1 {
+    font-size: 28px;
+  }
+
+  .campaign-search {
+    width: 100%;
+  }
+
+  .campaign-filters select {
+    width: 100%;
+  }
+
+  .campaign-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

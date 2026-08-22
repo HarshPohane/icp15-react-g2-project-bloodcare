@@ -8,7 +8,7 @@ import "./Hospitalscard.css";
 
 function HospitalCard({ hospital }) {
   return (
-    <article className="hospital-card">
+    <div className="hospital-card">
       <img
         src={hospital.image}
         alt={hospital.name}
@@ -83,7 +83,7 @@ function HospitalCard({ hospital }) {
         </Button>
 
       </div>
-    </article>
+    </div>
   );
 }
 

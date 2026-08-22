@@ -1,49 +1,33 @@
 .hospital-page {
   min-height: 100vh;
-
   padding: 50px 7%;
-
   background: #fff7f8;
 }
 
-
-/* Heading */
-
 .hospital-heading {
   text-align: center;
-
   margin-bottom: 35px;
 }
 
 .hospital-title {
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   gap: 8px;
-
   color: #d90429;
-
   font-size: 30px;
-
   font-weight: bold;
 }
 
 .hospital-title img {
   width: 28px;
-
   height: 28px;
-
   object-fit: contain;
 }
 
 .hospital-heading h1 {
   margin: 10px 0;
-
   font-size: 38px;
-
   color: #222;
 }
 
@@ -51,23 +35,13 @@
   color: #666;
 }
 
-
-/* Filters */
-
 .hospital-filters {
   display: flex;
-
   align-items: center;
-
   gap: 15px;
-
-  flex-wrap: wrap;
-
-  margin-bottom: 20px;
+ flex-wrap: wrap;
+ margin-bottom: 20px;
 }
-
-
-/* Search */
 
 .hospital-search {
   width: 350px;
