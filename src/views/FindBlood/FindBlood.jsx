@@ -1,5 +1,6 @@
 import React ,{useState} from "react";
 import "./FindBlood.css";
+import bloodDatas from './../../utils/findblood.json'
 
 function FindBlood() {
 
