@@ -88,6 +88,40 @@ function FindBlood() {
 
       </section>
 
+        {/* RESULTS */}
+      <section className="blood-results">
+
+        <div className="result-heading">
+          <div>
+            <h2>Available Blood</h2>
+            <p>{filteredBlood.length} results found</p>
+          </div>
+        </div>
+
+
+        <div className="blood-grid">
+
+          {filteredBlood.length > 0 ? (
+
+            filteredBlood.map((blood) => (
+
+              <CardFindBlood blood={blood}/>
+
+            ))
+
+          ) : (
+
+            <div className="no-result">
+              <h3>No blood found</h3>
+            </div>
+
+          )}
+
+        </div>
+
+      </section>
+
+
     </div>
   );
 }
