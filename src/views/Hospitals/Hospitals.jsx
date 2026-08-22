@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-
-import hospitals from "../Data/Hospitals";
+import hospitals from "../../data/Hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
-
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
 
@@ -17,18 +15,14 @@ function Hospitals() {
     savedFilters?.search || ""
   );
 
-  
   const [city, setCity] = useState(
     savedFilters?.city || "All"
   );
 
-
-  const [emergencyOnly, setEmergencyOnly] = useState(
+const [emergencyOnly, setEmergencyOnly] = useState(
     savedFilters?.emergencyOnly || false
   );
 
-
-  
   useEffect(() => {
 
     const filters = {
@@ -73,8 +67,7 @@ function Hospitals() {
     );
   });
 
-
-  return (
+   return (
     <section className="hospital-page">
 
       {/* Heading */}
@@ -98,12 +91,8 @@ function Hospitals() {
         </p>
 
       </div>
-
-
-      
       <div className="hospital-filters">
 
-        
         <div className="hospital-search">
 
           <span>🔍</span>
