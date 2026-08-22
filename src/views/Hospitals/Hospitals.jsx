@@ -3,6 +3,7 @@ import hospitals from "../../data/Hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
+import searchBarIcon from "../../components/icon-images/search-bar.png";
 
 import "./Hospitals.css";
 
@@ -19,7 +20,7 @@ function Hospitals() {
     savedFilters?.city || "All"
   );
 
-const [emergencyOnly, setEmergencyOnly] = useState(
+  const [emergencyOnly, setEmergencyOnly] = useState(
     savedFilters?.emergencyOnly || false
   );
 
@@ -67,10 +68,10 @@ const [emergencyOnly, setEmergencyOnly] = useState(
     );
   });
 
-   return (
+  return (
     <section className="hospital-page">
 
-      {/* Heading */}
+
       <div className="hospital-heading">
 
         <div className="hospital-title">
@@ -94,8 +95,10 @@ const [emergencyOnly, setEmergencyOnly] = useState(
       <div className="hospital-filters">
 
         <div className="hospital-search">
-
-          <span>🔍</span>
+          <img
+            src={searchBarIcon}
+            alt=""
+          />
 
           <input
             type="text"
