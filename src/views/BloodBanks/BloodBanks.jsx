@@ -3,11 +3,7 @@ import "./BloodBanks.css";
 import bloodbanksData from "../data/bloodbanks.json";
 
 const BloodBanks = () => {
-  const [bloodbanks, setBloodbanks] = useState([]);
-
-  useEffect(() => {
-    setBloodbanks(bloodbanksData);
-  }, []);
+  const [bloodbanks] = useState(bloodbanksData);
 
   return (
     <div className="bloodbanks-container">
