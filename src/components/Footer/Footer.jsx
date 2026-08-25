@@ -29,9 +29,9 @@ function Footer() {
           <h3>Services</h3>
 
           <Link to="/find-blood">Find Blood</Link>
-          <Link to="/blood-banks">Blood Banks</Link>
+          <Link to="/bloodbanks">Blood Banks</Link>
           <Link to="/hospitals">Hospitals</Link>
-          <Link to="/blood-request">Blood Request</Link>
+          <Link to="/bloodrequest">Blood Request</Link>
         </div>
 
         <div>
