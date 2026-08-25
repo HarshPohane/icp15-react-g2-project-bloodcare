@@ -1,22 +1,38 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/NavBar/Navbar";
+import Footer from "./components/Footer/Footer";
+
+
+import BloodBanks from "./views/BloodBanks/BloodBanks";
+import BloodRequest from "./views/BloodRequest/BloodRequest";
+
+
+import FindBlood from "./views/FindBlood/FindBlood";
+import Hospitals from "./views/Hospitals/Hospitals";
+import Login from "./views/Login/Login";
+import Signup from "./views/Signup/Signup";
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+
+
+
+      <Route path="/bloodbanks" element={<BloodBanks />} />
+      <Route path="/bloodrequest" element={<BloodRequest />} />
+
+
+
+      <Route path="/find-blood" element={<FindBlood />} />
+      <Route path="/hospitals" element={<Hospitals />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+
+    </Routes>
+    <Footer />
+  </BrowserRouter>,
+
 )
+
