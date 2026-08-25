@@ -1,92 +1,99 @@
-import { useEffect, useMemo, useState } from "react";
-import hospitals from "../Data/Hospitals";
+import { useEffect, useState } from "react";
+
+import hospitals from "../../data/hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
+
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
+
 import "./Hospitals.css";
 
 function Hospitals() {
-  const [search, setSearch] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem("hospitalFilters"))?.search || "";
-    } catch {
-      return "";
-    }
-  });
-  const [city, setCity] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem("hospitalFilters"))?.city || "All";
-    } catch {
-      return "All";
-    }
-  });
-  const [emergencyOnly, setEmergencyOnly] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem("hospitalFilters"))?.emergencyOnly || false;
-    } catch {
-      return false;
-    }
-  });
+  // Get saved filters
+  const savedFilters = JSON.parse(
+    localStorage.getItem("hospitalFilters") || "{}"
+  );
 
+  const [search, setSearch] = useState(savedFilters.search || "");
+  const [city, setCity] = useState(savedFilters.city || "All");
+  const [emergencyOnly, setEmergencyOnly] = useState(
+    savedFilters.emergencyOnly || false
+  );
+
+  // Save filters
   useEffect(() => {
     localStorage.setItem(
       "hospitalFilters",
-      JSON.stringify({ search, city, emergencyOnly }),
+      JSON.stringify({
+        search,
+        city,
+        emergencyOnly,
+      })
     );
   }, [search, city, emergencyOnly]);
 
-  const cities = useMemo(
-    () => ["All", ...new Set(hospitals.map((hospital) => hospital.city))],
-    [],
-  );
+  // Get cities
+  const cities = [
+    "All",
+    ...new Set(hospitals.map((hospital) => hospital.city)),
+  ];
 
-  const filteredHospitals = useMemo(() => {
-    const searchText = search.trim().toLowerCase();
+  // Filter hospitals
+  const filteredHospitals = hospitals.filter((hospital) => {
+    const searchText = search.toLowerCase();
 
-    return hospitals.filter((hospital) => {
-      const searchMatch = [hospital.name, hospital.city, hospital.address]
-        .join(" ")
-        .toLowerCase()
-        .includes(searchText);
-      const cityMatch = city === "All" || hospital.city === city;
-      const emergencyMatch = !emergencyOnly || hospital.emergency;
+    const searchMatch =
+      hospital.name.toLowerCase().includes(searchText) ||
+      hospital.city.toLowerCase().includes(searchText) ||
+      hospital.address.toLowerCase().includes(searchText);
 
-      return searchMatch && cityMatch && emergencyMatch;
-    });
-  }, [search, city, emergencyOnly]);
+    const cityMatch =
+      city === "All" || hospital.city === city;
 
+    const emergencyMatch =
+      !emergencyOnly || hospital.emergency === true;
+
+    return searchMatch && cityMatch && emergencyMatch;
+  });
 
   return (
     <section className="hospital-page">
 
+      {/* Heading */}
       <div className="hospital-heading">
+
         <div className="hospital-title">
-          <img
-            src={bloodIcon}
-            alt=""
-            aria-hidden="true"
-          />
+          <img src={bloodIcon} alt="BloodCare" />
           <span>BloodCare</span>
         </div>
-        <h2>Find Hospitals</h2>
-        <p>Find trusted hospitals and blood services near you.</p>
+
+        <h1>Find Hospitals</h1>
+
+        <p>
+          Find trusted hospitals and blood services near you.
+        </p>
+
       </div>
 
+      {/* Filters */}
       <div className="hospital-filters">
+
+        {/* Search */}
         <div className="hospital-search">
-          <span aria-hidden="true">&#128269;</span>
+          <span>🔍</span>
+
           <input
             type="text"
             placeholder="Search hospital or city..."
-            aria-label="Search hospitals"
             value={search}
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
           />
         </div>
+
+        {/* City */}
         <select
-          aria-label="Filter hospitals by city"
           value={city}
-          onChange={(event) => setCity(event.target.value)}
+          onChange={(e) => setCity(e.target.value)}
         >
           {cities.map((item) => (
             <option key={item} value={item}>
@@ -94,42 +101,65 @@ function Hospitals() {
             </option>
           ))}
         </select>
+
+        {/* Emergency */}
         <label className="emergency-filter">
+
           <input
             type="checkbox"
             checked={emergencyOnly}
-            onChange={(event) => setEmergencyOnly(event.target.checked)}
+            onChange={(e) =>
+              setEmergencyOnly(e.target.checked)
+            }
           />
+
           <img
             src={emergencyIcon}
-            alt=""
-            aria-hidden="true"
+            alt="Emergency"
           />
-          Emergency Only
+
+          <span>Emergency Only</span>
+
         </label>
+
       </div>
 
+      {/* Result */}
       <p className="hospital-result">
         Showing <strong>{filteredHospitals.length}</strong> hospitals
       </p>
 
-      <div className="hospital-grid">
-        {filteredHospitals.length > 0 ? (
-          filteredHospitals.map((hospital) => (
-            <HospitalCard key={hospital.id} hospital={hospital} />
-          ))
-        ) : (
-          <div className="no-hospital">
-            <img
-              src={bloodIcon}
-              alt=""
-              aria-hidden="true"
+      {/* Hospital Cards */}
+      {filteredHospitals.length > 0 ? (
+
+        <div className="hospital-grid">
+
+          {filteredHospitals.map((hospital) => (
+            <HospitalCard
+              key={hospital.id}
+              hospital={hospital}
             />
-            <h3>No Hospital Found</h3>
-            <p>Try another search.</p>
-          </div>
-        )}
-      </div>
+          ))}
+
+        </div>
+
+      ) : (
+
+        <div className="no-hospital">
+
+          <img
+            src={bloodIcon}
+            alt="No hospital"
+          />
+
+          <h3>No Hospital Found</h3>
+
+          <p>Try another search or city.</p>
+
+        </div>
+
+      )}
+
     </section>
   );
 }

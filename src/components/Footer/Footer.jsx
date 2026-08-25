@@ -19,19 +19,15 @@ function Footer() {
         <div>
           <h3>Quick Links</h3>
 
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/doners">Donors</Link>
+          <Link to="/hospitals">Hospitals</Link>
           <Link to="/campaigns">Campaigns</Link>
         </div>
 
         <div>
           <h3>Services</h3>
 
-          <Link to="/find-blood">Find Blood</Link>
-          <Link to="/blood-banks">Blood Banks</Link>
-          <Link to="/hospitals">Hospitals</Link>
-          <Link to="/blood-request">Blood Request</Link>
+          <Link to="/hospitals">Hospital List</Link>
+          <Link to="/campaigns">Campaigns</Link>
         </div>
 
         <div>

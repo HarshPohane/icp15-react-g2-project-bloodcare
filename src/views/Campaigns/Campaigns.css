@@ -1,4 +1,4 @@
-.hospital-page {
+.campaign-page {
   min-height: 100vh;
   padding: 40px 7%;
   background: #fff5f5;
@@ -6,42 +6,43 @@
 
 /* Heading */
 
-.hospital-heading {
+.campaign-heading {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.hospital-title {
+.campaign-title {
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 8px;
   margin-bottom: 10px;
 }
 
-.hospital-title img {
+.campaign-title img {
   width: 30px;
   height: 30px;
 }
 
-.hospital-title span {
+.campaign-title span {
   color: #d62828;
   font-size: 20px;
   font-weight: bold;
 }
 
-.hospital-heading h1 {
+.campaign-heading h1 {
   margin: 10px 0;
   color: #333;
 }
 
-.hospital-heading p {
+.campaign-heading p {
   color: #666;
 }
 
 /* Filters */
 
-.hospital-filters {
+.campaign-filters {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -57,7 +58,7 @@
 
 /* Search */
 
-.hospital-search {
+.campaign-search {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -70,125 +71,105 @@
   border-radius: 7px;
 }
 
-.hospital-search input {
+.campaign-search input {
   width: 100%;
+
   border: none;
   outline: none;
+
   font-size: 14px;
 }
 
-/* Select */
+/* City */
 
-.hospital-filters select {
-  padding: 11px;
+.campaign-filters select {
   width: 180px;
+
+  padding: 11px;
 
   border: 1px solid #ddd;
   border-radius: 7px;
 
   background: white;
+
   font-size: 14px;
-}
-
-/* Emergency */
-
-.emergency-filter {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-
-  cursor: pointer;
-  color: #d62828;
-  font-weight: 600;
-}
-
-.emergency-filter img {
-  width: 24px;
-  height: 24px;
 }
 
 /* Result */
 
-.hospital-result {
+.campaign-result {
   margin: 20px 0;
+
   color: #555;
 }
 
-.hospital-result strong {
+.campaign-result strong {
   color: #d62828;
 }
 
-/* Grid */
+/* Cards */
 
-.hospital-grid {
+.campaign-grid {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 20px;
 }
 
-/* No Hospital */
+/* No Campaign */
 
-.no-hospital {
+.no-campaign {
   text-align: center;
 
   padding: 50px 20px;
 
   background: white;
+
   border-radius: 10px;
 }
 
-.no-hospital img {
+.no-campaign img {
   width: 50px;
   height: 50px;
 }
 
-.no-hospital h3 {
+.no-campaign h3 {
   color: #d62828;
+
   margin: 10px 0;
 }
 
-.no-hospital p {
+.no-campaign p {
   color: #666;
 }
 
 /* Tablet */
 
 @media (max-width: 900px) {
-  .hospital-grid {
+  .campaign-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hospital-filters {
-    flex-wrap: wrap;
-  }
-
-  .hospital-search {
-    width: 100%;
-    flex: none;
   }
 }
 
 /* Mobile */
 
 @media (max-width: 600px) {
-  .hospital-page {
+  .campaign-page {
     padding: 30px 5%;
   }
 
-  .hospital-filters {
+  .campaign-filters {
     flex-direction: column;
+
     align-items: stretch;
   }
 
-  .hospital-filters select {
+  .campaign-filters select {
     width: 100%;
   }
 
-  .emergency-filter {
-    justify-content: flex-start;
-  }
-
-  .hospital-grid {
+  .campaign-grid {
     grid-template-columns: 1fr;
   }
 }

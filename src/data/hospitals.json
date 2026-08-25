@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Government Medical College Hospital",
+    "city": "Nagpur",
+    "address": "Hanuman Nagar, Nagpur",
+    "phone": "07122700000",
+    "rating": 4.5,
+    "emergency": true,
+    "image": "https://gmcnagpur.org/assets/images/Banner02.jpg",
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]
+  },
+  {
+    "id": 2,
+    "name": "Wockhardt Hospitals",
+    "city": "Nagpur",
+    "address": "North Ambazari Road, Nagpur",
+    "phone": "07126624444",
+    "rating": 4.6,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "B+", "O+", "AB+"]
+  },
+  {
+    "id": 3,
+    "name": "Alexis Multispeciality Hospital",
+    "city": "Nagpur",
+    "address": "Mankapur, Nagpur",
+    "phone": "07126789999",
+    "rating": 4.4,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895977?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "B+", "O+", "O-"]
+  },
+  {
+    "id": 4,
+    "name": "KEM Hospital",
+    "city": "Mumbai",
+    "address": "Parel, Mumbai",
+    "phone": "02224107000",
+    "rating": 4.5,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"]
+  },
+  {
+    "id": 5,
+    "name": "Lilavati Hospital and Research Centre",
+    "city": "Mumbai",
+    "address": "Bandra West, Mumbai",
+    "phone": "02226751000",
+    "rating": 4.7,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-", "AB+"]
+  },
+  {
+    "id": 6,
+    "name": "Ruby Hall Clinic",
+    "city": "Pune",
+    "address": "Sassoon Road, Pune",
+    "phone": "02066455100",
+    "rating": 4.6,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895977?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "B+", "B-", "O+", "O-", "AB+"]
+  },
+  {
+    "id": 7,
+    "name": "Jehangir Hospital",
+    "city": "Pune",
+    "address": "Sassoon Road, Pune",
+    "phone": "02066819999",
+    "rating": 4.5,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "A-", "B+", "O+", "AB+"]
+  },
+  {
+    "id": 8,
+    "name": "Sahyadri Super Speciality Hospital",
+    "city": "Pune",
+    "address": "Deccan Gymkhana, Pune",
+    "phone": "02067213000",
+    "rating": 4.6,
+    "emergency": true,
+    "image": "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80",
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-", "AB+"]
+  }
+]
