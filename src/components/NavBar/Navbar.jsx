@@ -10,6 +10,12 @@ function Navbar() {
       <NavLink to="/campaigns" className="nav-link">
         Campaigns
       </NavLink>
+      <NavLink to="/about" className="nav-link">
+        About
+      </NavLink>
+      <NavLink to="/contact" className="nav-link">
+        Contact
+      </NavLink>
     </nav>
   );
 }
