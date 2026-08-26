@@ -29,7 +29,7 @@ function Navbar() {
             Donors
           </NavLink>
 
-          <NavLink to="/blood-banks" className="nav-link">
+          <NavLink to="/bloodbanks" className="nav-link">
             Blood Banks
           </NavLink>
 
