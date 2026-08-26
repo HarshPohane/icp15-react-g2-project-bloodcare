@@ -8,7 +8,7 @@ function Navbar() {
 
         <Link to="/" className="logo">
           <span className="logo-icon">❤</span>
-          <span>Life<span>Drop</span></span>
+          <span>Blood<span>Care</span></span>
         </Link>
 
         <div className="nav-links">
