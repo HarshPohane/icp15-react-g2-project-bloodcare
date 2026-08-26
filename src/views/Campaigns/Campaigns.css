@@ -120,7 +120,7 @@
   color: #666;
 }
 
-/* Tablet */
+
 
 @media (max-width: 900px) {
   .campaign-grid {
@@ -128,7 +128,7 @@
   }
 }
 
-/* Mobile */
+
 
 @media (max-width: 600px) {
   .campaign-page {

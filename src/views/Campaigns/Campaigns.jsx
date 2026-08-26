@@ -5,7 +5,7 @@ import bloodIcon from "../../components/icon-images/blood-drop.png";
 import "./Campaigns.css";
 
 function Campaigns() {
-  // Get saved filters
+
   const savedFilters = JSON.parse(
     localStorage.getItem("campaignFilters") || "{}"
   );
@@ -18,7 +18,7 @@ function Campaigns() {
     savedFilters.city || "All"
   );
 
-  // Save filters in localStorage
+  
   useEffect(() => {
     localStorage.setItem(
       "campaignFilters",
@@ -29,7 +29,7 @@ function Campaigns() {
     );
   }, [search, city]);
 
-  // Get unique cities
+  
   const cities = [
     "All",
     ...new Set(
@@ -37,7 +37,7 @@ function Campaigns() {
     ),
   ];
 
-  // Filter campaigns
+  
   const filteredCampaigns = campaigns.filter((campaign) => {
     const searchText = search.toLowerCase();
 
@@ -52,7 +52,7 @@ function Campaigns() {
     return searchMatch && cityMatch;
   });
 
-  // Join Campaign
+  
   const handleJoin = (campaign) => {
     alert(`You joined "${campaign.title}" campaign.`);
   };
@@ -60,7 +60,7 @@ function Campaigns() {
   return (
     <section className="campaign-page">
 
-      {/* Page Heading */}
+  
       <div className="campaign-heading">
 
         <div className="campaign-title">
@@ -80,10 +80,10 @@ function Campaigns() {
 
       </div>
 
-      {/* Filters */}
+      
       <div className="campaign-filters">
 
-        {/* Search */}
+        
         <div className="campaign-search">
 
           <span>🔍</span>
@@ -97,7 +97,7 @@ function Campaigns() {
 
         </div>
 
-        {/* City Filter */}
+        
         <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -114,14 +114,14 @@ function Campaigns() {
 
       </div>
 
-      {/* Result */}
+      
       <p className="campaign-result">
         Showing{" "}
         <strong>{filteredCampaigns.length}</strong>{" "}
         campaigns
       </p>
 
-      {/* Campaign Cards */}
+    
       {filteredCampaigns.length > 0 ? (
 
         <div className="campaign-grid">
@@ -138,7 +138,7 @@ function Campaigns() {
 
       ) : (
 
-        /* No Campaign */
+        
         <div className="no-campaign">
 
           <img

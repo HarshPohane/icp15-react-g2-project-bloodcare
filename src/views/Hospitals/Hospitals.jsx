@@ -3,11 +3,11 @@ import hospitals from "../../data/hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
-import searchbar from "../../components/icon-images/searchbar.png";
+import searchbar from "../../components/icon-images/search-bar.png";
 import "./Hospitals.css";
 
 function Hospitals() {
-  // Get saved filters
+  
   const savedFilters = JSON.parse(
     localStorage.getItem("hospitalFilters") || "{}"
   );
@@ -18,7 +18,7 @@ function Hospitals() {
     savedFilters.emergencyOnly || false
   );
 
-  // Save filters
+  
   useEffect(() => {
     localStorage.setItem(
       "hospitalFilters",
@@ -30,13 +30,13 @@ function Hospitals() {
     );
   }, [search, city, emergencyOnly]);
 
-  // Get cities
+
   const cities = [
     "All",
     ...new Set(hospitals.map((hospital) => hospital.city)),
   ];
 
-  // Filter hospitals
+  
   const filteredHospitals = hospitals.filter((hospital) => {
     const searchText = search.toLowerCase();
 
@@ -57,7 +57,7 @@ function Hospitals() {
   return (
     <section className="hospital-page">
 
-      {/* Heading */}
+      
       <div className="hospital-heading">
 
         <div className="hospital-title">
@@ -73,10 +73,10 @@ function Hospitals() {
 
       </div>
 
-      {/* Filters */}
+      
       <div className="hospital-filters">
 
-        {/* Search */}
+        
         <div className="hospital-search">
           <img src={searchbar} alt="searchbar" />
 
@@ -89,7 +89,7 @@ function Hospitals() {
           />
         </div>
 
-        {/* City */}
+        
         <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -101,7 +101,7 @@ function Hospitals() {
           ))}
         </select>
 
-        {/* Emergency */}
+        
         <label className="emergency-filter">
 
           <input
@@ -128,7 +128,7 @@ function Hospitals() {
         Showing <strong>{filteredHospitals.length}</strong> hospitals
       </p>
 
-      {/* Hospital Cards */}
+    
       {filteredHospitals.length > 0 ? (
 
         <div className="hospital-grid">

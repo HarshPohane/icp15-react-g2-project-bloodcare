@@ -145,7 +145,7 @@
   color: #666;
 }
 
-/* Tablet */
+
 
 @media (max-width: 900px) {
   .hospital-grid {
@@ -162,7 +162,6 @@
   }
 }
 
-/* Mobile */
 
 @media (max-width: 600px) {
   .hospital-page {
