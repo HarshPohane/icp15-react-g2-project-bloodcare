@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-
 import hospitals from "../../data/hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
-
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
-
+import searchbar from "../../components/icon-images/searchbar.png";
 import "./Hospitals.css";
 
 function Hospitals() {
@@ -64,10 +62,10 @@ function Hospitals() {
 
         <div className="hospital-title">
           <img src={bloodIcon} alt="BloodCare" />
-          <span>BloodCare</span>
+          <h1>BloodCare</h1>
         </div>
 
-        <h1>Find Hospitals</h1>
+        <h2>Find Hospitals</h2>
 
         <p>
           Find trusted hospitals and blood services near you.
@@ -80,7 +78,8 @@ function Hospitals() {
 
         {/* Search */}
         <div className="hospital-search">
-          <span>🔍</span>
+          <img src={searchbar} alt="searchbar" />
+
 
           <input
             type="text"

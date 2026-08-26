@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
-
 import campaigns from "../../data/campaigns.json";
 import CampaignCard from "../../components/Campaignscard/Campaignscard";
-
 import bloodIcon from "../../components/icon-images/blood-drop.png";
-
 import "./Campaigns.css";
 
 function Campaigns() {
@@ -72,10 +69,10 @@ function Campaigns() {
             alt="BloodCare"
           />
 
-          <span>BloodCare</span>
+          <h1>BloodCare</h1>
         </div>
 
-        <h1>Blood Donation Campaigns</h1>
+        <h2>Blood Donation Campaigns</h2>
 
         <p>
           Join blood donation campaigns and help save lives.
