@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import Home from './views/Home/Home.jsx';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Home />
+  </StrictMode>,
+=======
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
@@ -33,5 +43,6 @@ createRoot(document.getElementById('root')).render(
     <Footer />
   </BrowserRouter>,
 
+>>>>>>> ba0305d4db95371d4cac933564afe4240f35b2ca
 )
 

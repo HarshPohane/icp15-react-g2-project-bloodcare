@@ -6,25 +6,33 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
     "lucide-react": "^1.34.0",
     "react": "^19.2.8",
+<<<<<<< HEAD
+    "react-dom": "^19.2.8"
+=======
     "react-dom": "^19.2.8",
     "react-router": "^8.3.0",
     "react-router-dom": "^7.18.2"
+>>>>>>> ba0305d4db95371d4cac933564afe4240f35b2ca
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
+<<<<<<< HEAD
+    "oxlint": "^1.75.0",
+    "vite": "^8.2.0"
+=======
     "eslint": "^10.8.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
     "vite": "^8.2.2"
+>>>>>>> ba0305d4db95371d4cac933564afe4240f35b2ca
   }
 }
