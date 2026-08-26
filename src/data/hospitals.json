@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Government Medical College Hospital",
+    "city": "Nagpur",
+    "address": "Hanuman Nagar, Nagpur, Maharashtra",
+    "phone": "07122752000",
+    "rating": 4.5,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"],
+    "image": "https://imgs.search.brave.com/ZlsvStIj4yX08ltcgSJtABNzgONzdV2voD9x7sq-X1E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9rYXJ1/cmdtYy5hYy5pbi9r/dGdhZG1pbi91c2Vy/ZGF0YS9pbWFnZXMv/YmFubmVyLzI1MDYy/NjAzMDYzMl9nb3Zl/cm5tZW50LW1lZGlj/YWwtY29sbGVnZS1h/bmQtaG9zcGl0YWwt/YWRtaW4tYmxvY2st/Mzk0NDU4OC5qcGc"
+  },
+  {
+    "id": 2,
+    "name": "Wockhardt Hospitals",
+    "city": "Nagpur",
+    "address": "North Ambazari Road, Nagpur, Maharashtra",
+    "phone": "07126623444",
+    "rating": 4.4,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/tcIxA7sf-p3m67iUsPggnQ_DxoSuLrMIfmKz_VTFh_M/rs:fit:500:0:1:0/g:ce/aHR0cDovL3d3dy5p/bmRpYWhvc3BpdGFs/dG91ci5jb20vaW1h/Z2VzL2lubmVycGFn/ZS9Ib3NwaXRhbC1H/YWxsYXJ5L3dvY2to/YXJkdC1ob3NwaXRh/bHMtZ3JvdXA4Lmpw/Zw"
+  },
+  {
+    "id": 3,
+    "name": "Alexis Multispeciality Hospital",
+    "city": "Nagpur",
+    "address": "Mankapur, Nagpur, Maharashtra",
+    "phone": "07126622666",
+    "rating": 4.6,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/PRH_baHD24pOKQrOEXglm2Jt1jGiMh3v_7TMvoomWpI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRz/dXJnZWluZGlhLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wMi9BbGV4aXMt/TXVsdGlzcGVjaWFs/aXR5LUhvc3BpdGFs/LU5hZ3B1ci1NYWhh/cmFzaHRyYS1JbmRp/YS53ZWJw"
+  },
+  {
+    "id": 4,
+    "name": "Care Hospital",
+    "city": "Nagpur",
+    "address": "Wardha Road, Nagpur, Maharashtra",
+    "phone": "07126621234",
+    "rating": 4.3,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "B-", "O+", "AB+"],
+    "image": "https://imgs.search.brave.com/Fj-jh9cjfdJ7sSUP0xElAbwqQuezCMpgkbzDdXa2pXY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jYXJl/LW5ldy1kZXYuczMu/YXAtc291dGgtMS5h/bWF6b25hd3MuY29t/L2Fzc2V0cy9pbWFn/ZXMvbWFpbi9yYWlw/dXItY2FyZS1ob3Nw/aXRhbHMuanBn"
+  },
+  {
+    "id": 5,
+    "name": "AIIMS Nagpur",
+    "city": "Nagpur",
+    "address": "MIHAN, Nagpur, Maharashtra",
+    "phone": "07122555555",
+    "rating": 4.6,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/wWkTBSwqlXcG6FS_EqLlwwOTfBG-jmNGWMnwZ6vQcuw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjQ3/NTQ2MDMuanBn"
+  },
+  {
+    "id": 6,
+    "name": "Sassoon General Hospital",
+    "city": "Pune",
+    "address": "Near Pune Railway Station, Pune, Maharashtra",
+    "phone": "02026102450",
+    "rating": 4.2,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/VAMJZv1BaY2IM1gXS9PmrduG0GHFQ85WWQ4DRBYXzIo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mbGVl/dHRvZ2V0aGVyLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Ni8wNS9TYXNzb29u/LUhvc3BpdGFsLVB1/bmUuanBn"
+  },
+  {
+    "id": 7,
+    "name": "Ruby Hall Clinic",
+    "city": "Pune",
+    "address": "Sassoon Road, Pune, Maharashtra",
+    "phone": "02066455100",
+    "rating": 4.5,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "O+", "O-", "AB+"],
+    "image": "https://imgs.search.brave.com/rDqbuA3hSu51_7mKYGIt_fBOto3NwRPzHECScb3JrrE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kb2N0/b3JsaXN0aW5naW5n/ZXN0aW9ucHIuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L3Byb3Zp/ZGVyLzE2OTg5MjU3/NjM4NDJfMDAxMmow/MDAwMEdJZnlMQUFU/SG9zcGl0YWxGYWNp/bGl0eUltYWdlc19P/UEQlMjBBcmVhLmpw/Zw"
+  },
+  {
+    "id": 8,
+    "name": "Deenanath Mangeshkar Hospital",
+    "city": "Pune",
+    "address": "Erandwane, Pune, Maharashtra",
+    "phone": "02040151000",
+    "rating": 4.6,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/W4PjXjxUSu2B1XKrgbYBrhXIhZJ02PF6x2Zm09nbdAo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMxLWZhYnJpYy5w/cmFjdG8uY29tL3By/YWN0aWNlcy82NDE5/MjEvZGVlbmFuYXRo/LW1hbmdlc2hrYXIt/aG9zcGl0YWwtcHVu/ZS02NjU0NDQyYzRm/MzE3LnBuZw"
+  },
+  {
+    "id": 9,
+    "name": "Jehangir Hospital",
+    "city": "Pune",
+    "address": "Sassoon Road, Pune, Maharashtra",
+    "phone": "02066819999",
+    "rating": 4.4,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "B-", "O+"],
+    "image": "https://imgs.search.brave.com/NXdKf9Zeex1GAqFPvnOr0lljj7xdd0tlg2P1URGfWKw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZi5i/c3RhdGljLmNvbS94/ZGF0YS9pbWFnZXMv/aG90ZWwvc3F1YXJl/NjAwLzE4NDY0MDE1/Ny53ZWJwP2s9Y2E1/MGQ4OTNiNmU4N2Vm/ZDZkYzlhMzliY2Nk/MGI3MDc5YzkxYzBj/Y2ZlM2Q2NTM5YTc1/NjdlYTJkOGI2OTFj/ZCZvPQ"
+  },
+  {
+    "id": 10,
+    "name": "Sahyadri Hospital",
+    "city": "Pune",
+    "address": "Deccan Gymkhana, Pune, Maharashtra",
+    "phone": "02067213000",
+    "rating": 4.4,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "O+", "AB+"],
+    "image": "https://imgs.search.brave.com/lL_XobDnGb6SFD_t5kpVbJTQNS7u5KksUlTWxhMSHzQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9kb2N0/b3JsaXN0aW5naW5n/ZXN0aW9ucHIuYmxv/Yi5jb3JlLndpbmRv/d3MubmV0L2RvY3Rv/cnByb2ZpbGVwaWMv/MTY1MDUyOTI1NjU1/OF9Ib3NwaXRhbFBy/b2ZpbGVJbWFnZV9m/NTg0Y2E0Yi00ODc1/LTRjNGUtYWQzYy1l/YzM5MzVmMjBlY2Mu/cG5n"
+  },
+  {
+    "id": 11,
+    "name": "KEM Hospital Mumbai",
+    "city": "Mumbai",
+    "address": "Parel, Mumbai, Maharashtra",
+    "phone": "02224107000",
+    "rating": 4.3,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/Yw2Jtto6amILOJMctNV8V2fpEidRIr-cgOUxKTVMCng/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIy/ODk5MTc0Ny9waG90/by9tdW1iYWktaW5k/aWEtcGVvcGxlLXBh/c3NieS1rZW0taG9z/cGl0YWwtcGFyZWwt/aW4tbXVtYmFpLWlu/ZGlhLW9uLWZyaWRh/eS1hcHJpbC0xNy0y/MDIwLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz02SjhCX2l1/LS00LURNLXRvdEFN/eXdtY05maGlhdHhQ/OFNkeDk3RkVPTlpR/PQ"
+  },
+  {
+    "id": 12,
+    "name": "Tata Memorial Hospital",
+    "city": "Mumbai",
+    "address": "Parel, Mumbai, Maharashtra",
+    "phone": "02224177000",
+    "rating": 4.7,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+"],
+    "image": "https://imgs.search.brave.com/HUczXy3yhEVWzr-7wDLKcfxtU4HyJT1xbc2lcD3EnCU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9naWNy/LmlhcmMud2hvLmlu/dC9odWIvbXVtYmFp/L3RhdGEtbWVtb3Jp/YWwtY2VudHJlLW11/bWJhaS1pbmRpYS90/YXRhLW1lbW9yaWFs/LWhvc3BpdGFsLXBh/cmVsLW11bWJhaS1w/dWJsaWMtaG9zcGl0/YWxzLWh2eGZvLmpw/Zw"
+  },
+  {
+    "id": 13,
+    "name": "Lilavati Hospital",
+    "city": "Mumbai",
+    "address": "Bandra West, Mumbai, Maharashtra",
+    "phone": "02226751000",
+    "rating": 4.5,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "O+", "AB+"],
+    "image": "https://imgs.search.brave.com/96tsWTHlRidJUaNS_5dFt7bVARrEQN8utObSgl1n5g0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/aW5uYXlhdG1lZGlj/YWwuY29tL3N0b3Jh/Z2UvdXBsb2Fkcy9o/b3NwaXRhbC9waG90/b3MvaW1nYmFubmVy/LTEzMzE4NTk4NjE2/MzAzMzIzNS0xNzA3/OTE0NTgyLndlYnA"
+  },
+  {
+    "id": 14,
+    "name": "Kokilaben Dhirubhai Ambani Hospital",
+    "city": "Mumbai",
+    "address": "Andheri West, Mumbai, Maharashtra",
+    "phone": "02242696969",
+    "rating": 4.6,
+    "emergency": true,
+    "bloodGroups": ["A+", "A-", "B+", "O+", "O-"],
+    "image": "https://imgs.search.brave.com/FLMZ3MR4zExrlzSa4gNTWA6rbllszrKSxzZjZ34QOQE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hcGku/cW9uYXFoZWFsdGgu/Y29tL3B1YmxpYy9p/bWFnZS9ob3NwaXRh/bC9rb2tpbGFiZW4t/ZGhpcnViaGFpLWFt/YmFuaS1ob3NwaXRh/bC1hbmQtbWVkaWNh/bC1yZXNlYXJjaC1p/bnN0aXR1dGUvMw"
+  },
+  {
+    "id": 15,
+    "name": "Hinduja Hospital",
+    "city": "Mumbai",
+    "address": "Mahim, Mumbai, Maharashtra",
+    "phone": "02224451515",
+    "rating": 4.5,
+    "emergency": true,
+    "bloodGroups": ["A+", "B+", "B-", "O+", "AB+"],
+    "image": "https://imgs.search.brave.com/AfQtfHQYtT3naWV-tFegzttkiaA972dG16BDA8Cq3KE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jb250/ZW50LmpkbWFnaWNi/b3guY29tL3YyL2Nv/bXAvbXVtYmFpL2Q3/LzAyMnB4eDIyLnh4/MjIuMjMxMjA3MTYw/NjU3LnE3ZDcvY2F0/YWxvZ3VlL3AtZC1o/aW5kdWphLWhvc3Bp/dGFsLWFuZC1tZWRp/Y2FsLXJlc2VhcmNo/LWNlbnRyZS1hbWJ1/bGFuY2Utc2Vydmlj/ZXMtbWFoaW0tbXVt/YmFpLTI0LWhvdXJz/LWFtYnVsYW5jZS1z/ZXJ2aWNlcy13NTVy/b3RydmdxLTI1MC5q/cGc_dz0zODQwJnE9/NzU"
+  }
+]
