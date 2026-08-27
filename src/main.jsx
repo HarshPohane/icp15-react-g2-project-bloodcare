@@ -7,6 +7,8 @@ import Home from "./views/Home/Home";
 import BloodBanks from "./views/BloodBanks/BloodBanks";
 import BloodRequest from "./views/BloodRequest/BloodRequest";
 import Campaigns from "./views/Campaigns/Campaigns";
+import About from "./views/About/About";
+import Contact from "./views/Contact/Contact";
 
 import FindBlood from "./views/FindBlood/FindBlood";
 import Hospitals from "./views/Hospitals/Hospitals";
@@ -23,6 +25,8 @@ createRoot(document.getElementById('root')).render(
       <Route path="/bloodbanks" element={<BloodBanks />} />
       <Route path="/bloodrequest" element={<BloodRequest />} />
       <Route path="/campaigns" element={<Campaigns />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
 
       <Route path="/find-blood" element={<FindBlood />} />
       <Route path="/hospitals" element={<Hospitals />} />
