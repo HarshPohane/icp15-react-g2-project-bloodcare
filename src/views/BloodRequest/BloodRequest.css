@@ -1,5 +1,4 @@
-
-.bloodbanks-page {
+.blood-request-page {
   background-color: #FFFAF3;
   min-height: 100vh;
   padding: 20px;
@@ -12,10 +11,17 @@
   margin-bottom: 20px;
 }
 
-.search-bar {
-  width: 100%;
-  max-width: 400px;
+.blood-request-form {
+  max-width: 500px;
   margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blood-request-form input,
+.blood-request-form select,
+.blood-request-form textarea {
   padding: 10px;
   border: 2px solid #FFE5BF;
   border-radius: 8px;
@@ -23,86 +29,86 @@
   font-size: 16px;
 }
 
-.bloodbanks-grid {
+.blood-request-form textarea {
+  min-height: 80px;
+}
+
+.btn-primary {
+  background-color: #F62440;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #c81d34;
+}
+
+.list-title {
+  text-align: center;
+  color: #F62440;
+  margin-bottom: 15px;
+}
+
+.request-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
-.bloodbank-card {
+.request-card {
   background: #FFF2DB;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
 }
 
-.bloodbank-card:hover {
-  transform: translateY(-5px);
-}
-
-.bloodbank-card h2 {
+.request-card h3 {
   color: #F62440;
   margin-bottom: 10px;
 }
 
-.bloodbank-card p {
-  margin: 5px 0;
-  color: #333;
+.status.pending {
+  color: #F62440;
 }
 
-.availability {
-  margin: 15px 0;
+.status.in\ progress {
+  color: #ff9800;
 }
 
-.blood-group {
-  display: inline-block;
-  margin: 5px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: bold;
+.status.fulfilled {
+  color: green;
 }
 
-.available {
-  background-color: #F62440;
-  color: white;
-}
-
-.not-available {
-  background-color: #FFE5BF;
-  color: #333;
-}
-
-/* Buttons */
 .card-actions {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-.btn-primary {
-  background-color: #F62440;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .btn-secondary {
   background-color: #FFE5BF;
   color: #333;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
-/* Responsive */
+.btn-danger {
+  background-color: #F62440;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .card-actions {
     flex-direction: column;
