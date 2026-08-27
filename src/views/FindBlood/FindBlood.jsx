@@ -38,7 +38,7 @@ function FindBlood() {
         </div>
 
         <div className="icon-container">
-          <div className="blood-icon">❤️</div>
+          <div className="blood-icon-heart">❤️</div>
           <div>
             <button> Blood Availibility</button>
           </div>
@@ -108,7 +108,7 @@ function FindBlood() {
 
             filteredBlood.map((blood) => (
 
-              <CardFindBlood blood={blood}/>
+              <CardFindBlood blood={blood} key={blood.id}/>
 
             ))
 

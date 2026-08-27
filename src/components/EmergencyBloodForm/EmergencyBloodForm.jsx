@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Siren} from 'lucide-react'
+import { Siren } from "lucide-react";
 import "./EmergencyBloodForm.css";
 
 function EmergencyBloodForm() {
@@ -10,23 +10,39 @@ function EmergencyBloodForm() {
   const [location, setLocation] = useState("");
   const [phone, setPhone] = useState("");
 
-  
+  const dataRemove = () => {
+    setBloodGroup(""),
+    setHospital(""),
+    setLocation(""),
+    setPatientName(""),
+    setPhone(""),
+    setUnits("")
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     alert("Emergency Blood Request Submitted!");
+    const formdataEmergency = {
+      patientName,
+      bloodGroup,
+      units,
+      hospital,
+      location,
+      phone,
+    };
 
-    console.log(patientName);
-    console.log(bloodGroup);
-    console.log(units);
-    console.log(hospital);
-    console.log(location);
-    console.log(phone);
+    localStorage.setItem("formdataEmergency",JSON.stringify(formdataEmergency))
+    console.log(formdataEmergency);
+
+    dataRemove();
   };
 
   return (
     <div className="emergency-container">
-      <h2><Siren size={20} color="orange" /> Emergency Blood Request</h2>
+      <h2>
+        <Siren size={20} color="orange" /> Emergency Blood Request
+      </h2>
 
       <p>Need blood urgently? Submit your request.</p>
 

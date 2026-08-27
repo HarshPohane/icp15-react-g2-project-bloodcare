@@ -9,14 +9,11 @@
   align-items: center;
 
 }
-
-
 .hero-text h1 {
   font-size: 46px;
   margin-bottom: 15px;
   max-width: 650px;
 }
-
 .hero-text  p {
   font-size: 17px;
   line-height: 1.7;
@@ -28,12 +25,24 @@
     justify-content: center;
     align-items: center;
 }
-.blood-icon{
-    font-size: 100px;
+.blood-icon-heart{
+    font-size: 80px;
     background-color: rgb(175, 161, 161);
     border-radius: 50%;
+    animation: floatBlood 2s ease-in-out infinite;
 }
-button{
+
+@keyframes floatBlood {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+}
+.icon-container button{
     background-color:#f62440;
     border-radius: 30px;
     padding: 10px 20px;
@@ -93,6 +102,7 @@ button{
 .input-group input {
   width: 100%;
   padding: 14px 15px;
+  height: 50px;
   border: 1px solid #ddd;
   border-radius: 8px;
   outline: none;
@@ -102,7 +112,7 @@ button{
 
 .input-group input:focus,
 .input-group select:focus {
-  border-color: #c1121f;
+  border-color: #f62440;
 }
 
 /* ================= RESULTS ================= */
@@ -138,26 +148,21 @@ button{
 
 
 
-.blood-card button {
+.btn-btn {
   width: 100%;
   border: none;
   padding: 13px;
-
   border-radius: 8px;
-
-  background: #c1121f;
+  background:#f62440;
   color: white;
-
   font-size: 15px;
   font-weight: 600;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
 
-.blood-card button:hover {
-  background: #8f0913;
+.btn-btn:hover {
+  background: #b12437;
 }
 
 
@@ -216,6 +221,12 @@ button{
 
   .blood-grid {
     grid-template-columns: 1fr;
+  }
+
+  .find-blood-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
 }
