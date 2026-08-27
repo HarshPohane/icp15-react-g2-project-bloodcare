@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-
+import Home from "./views/Home/Home";
 import BloodBanks from "./views/BloodBanks/BloodBanks";
 import BloodRequest from "./views/BloodRequest/BloodRequest";
 import Campaigns from "./views/Campaigns/Campaigns";
@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')).render(
     <Routes>
 
 
-
+<Route path="/" element={<Home />} />
       <Route path="/bloodbanks" element={<BloodBanks />} />
       <Route path="/bloodrequest" element={<BloodRequest />} />
       <Route path="/campaigns" element={<Campaigns />} />
@@ -36,6 +36,7 @@ createRoot(document.getElementById('root')).render(
     </Routes>
     <Footer />
   </BrowserRouter>,
+
 
 )
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BloodBanks.css";
-import bloodbanks from "../../data/bloodbanks";
+import bloodbanks from "../../data/bloodbanks.json";
 
 const BloodBanks = () => {
   const [search, setSearch] = useState("");
