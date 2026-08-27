@@ -4,7 +4,7 @@ import {MapPin} from 'lucide-react'
 
 function CardFindBlood({blood}) {
   return (
-   <div className="blood-card" key={blood.id}>
+   <div className="blood-card">
 
                 <div className="blood-card-top">
 
@@ -38,7 +38,7 @@ function CardFindBlood({blood}) {
                 </div>
 
 
-                <button
+                <button className='btn-btn'
                   onClick={() =>
                     alert(
                       `Blood request sent for ${blood.bloodGroup} blood.`
