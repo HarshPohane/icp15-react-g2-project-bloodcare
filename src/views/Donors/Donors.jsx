@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Donors.css";
 import Donorinfos from "./../../utils/donorinfos.json";
 
@@ -14,40 +14,69 @@ function Donors() {
   const [lastDonation, setLastDonation] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const resetForm = () => {
+  setFullName("");
+  setAge("");
+  setGender("");
+  setBloodGroup("");
+  setPhone("");
+  setEmail("");
+  setWeight("");
+  setCity("");
+  setLastDonation("");
+};
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     setSubmitted(true);
 
-    console.log({
-      fullName,
-      age,
-      gender,
-      bloodGroup,
-      phone,
-      email,
-      weight,
-      city,
-      lastDonation,
-    });
+    const donorData = {
+    fullName,
+    age,
+    gender,
+    bloodGroup,
+    phone,
+    email,
+    weight,
+    city,
+    lastDonation,
+  };
+  localStorage.setItem("donorData", JSON.stringify(donorData));
+  console.log(donorData);
+   resetForm();
+   
+   setTimeout(() => {
+    setSubmitted(false);
+  }, 2000);
   };
   return (
     <div className="donor-page">
-      {/* hero section */}
-      <section className="donor-hero">
-        <div className="hero-content">
-          <p className="hero-tag">💚 SAVE A LIFE</p>
+      {/* hero-section */}
+        <section className="hero-section">
+          <div className="hero-head">
+            <h1>
+              Become A DONOR 
+              With BloodCare <br />
+              Now!
+            </h1>
 
-          <h1>Become a Blood Donor</h1>
+            <p className="head-paraone">
+              Your small contribution can make a big difference. Register today
+              and become someone's hero.
+            </p>
 
-          <p>
-            Your small contribution can make a big difference. Register today
-            and become someone's hero.
-          </p>
-        </div>
+            <p className="head-btn">🤝 Become a Donor</p>
 
-        <div className="blood-icon">🩸</div>
-      </section>
+            <p className="head-paratwo">
+              Fill up a simple form.
+              <br />
+              Save those in need when you can!
+            </p>
+          </div>
+
+          <div className="blood-icon">🩸</div>
+        </section>
 
        {/* Main Section */}
         <section className="donor-content">
@@ -58,11 +87,7 @@ function Donors() {
               <p>Fill in your details to register as a blood donor.</p>
             </div>
 
-            {submitted && (
-              <div className="success-message">
-                ✓ Registration submitted successfully!
-              </div>
-            )}
+         
 
             <form onSubmit={handleSubmit}>
               <div className="form-grid">
@@ -198,9 +223,14 @@ function Donors() {
               </div>
 
               <button type="submit" className="register-btn">
-                Register as Donor ❤️
+                Register as Donor <span>❤️</span>
               </button>
             </form>
+               {submitted && (
+              <div className="success-message">
+                ✓ Registration submitted successfully!
+              </div>
+            )}
           </div>
 
           {/* Eligibility Section */}
