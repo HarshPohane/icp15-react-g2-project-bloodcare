@@ -9,7 +9,7 @@ import BloodRequest from "./views/BloodRequest/BloodRequest";
 import Campaigns from "./views/Campaigns/Campaigns";
 import About from "./views/About/About";
 import Contact from "./views/Contact/Contact";
-
+import Donors from './views/Donors/Donors';
 import FindBlood from "./views/FindBlood/FindBlood";
 import Hospitals from "./views/Hospitals/Hospitals";
 import Login from "./views/Login/Login";
@@ -27,7 +27,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/campaigns" element={<Campaigns />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-
+      <Route path='/donors' element={<Donors/>}/> 
       <Route path="/find-blood" element={<FindBlood />} />
       <Route path="/hospitals" element={<Hospitals />} />
       <Route path="/login" element={<Login />} />
