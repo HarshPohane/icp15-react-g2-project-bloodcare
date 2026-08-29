@@ -1,7 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import Button from "../../components/Button/Button";
 import "./Navbar.css";
 
 function Navbar() {
+  const { isAuthenticated, logout } = useAuth(); 
+
+  const handleLogout = () => {
+    logout();
+    navigate("/"); 
+  };
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -48,10 +56,13 @@ function Navbar() {
         </div>
 
         <div className="nav-actions">
-          <Link to="/login" className="login-btn">
-            Login
-          </Link>
-
+          {isAuthenticated ? (
+            <button onClick={handleLogout} className="signup-btn">Logout</button>
+          ) : (
+            <Link to="/login" className="login-btn">
+              Login
+            </Link>
+          )}
           <Link to="/signup" className="signup-btn">
             Register
           </Link>
