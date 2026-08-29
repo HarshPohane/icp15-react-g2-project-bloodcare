@@ -38,6 +38,28 @@
   color: #666;
 }
 
+.page-motivation {
+  max-width: 760px;
+  margin: 12px auto 0;
+  color: #b42318;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.page-ending-note {
+  margin-top: 28px;
+  padding: 18px 22px;
+  text-align: center;
+  color: #7a1c1c;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #f4c2c2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(214, 40, 40, 0.08);
+}
+
 .campaign-filters {
   display: flex;
   align-items: center;

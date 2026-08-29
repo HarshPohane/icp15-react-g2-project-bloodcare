@@ -79,6 +79,10 @@ function Campaigns() {
           Join blood donation campaigns and help save lives.
         </p>
 
+        <p className="page-motivation">
+          A single donation can bring hope to families in need. Be part of the movement that keeps communities strong and resilient.
+        </p>
+
       </div>
 
       
@@ -147,7 +151,12 @@ function Campaigns() {
 
       )}
 
+      <p className="page-ending-note">
+        Thank you for helping build a stronger, healthier community through donation and care.
+      </p>
+
     </section>
+    
   );
 }
 

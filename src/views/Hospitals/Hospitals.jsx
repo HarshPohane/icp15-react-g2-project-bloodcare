@@ -72,6 +72,10 @@ function Hospitals() {
           Find trusted hospitals and blood services near you.
         </p>
 
+        <p className="page-motivation">
+          Every drop can save a life. Find the right hospital support and emergency care when it matters most.
+        </p>
+
       </div>
 
       
@@ -150,6 +154,10 @@ function Hospitals() {
         </div>
 
       )}
+
+      <p className="page-ending-note">
+        Every search brings us closer to faster care, safer support, and more lives saved.
+      </p>
 
     </section>
   );
