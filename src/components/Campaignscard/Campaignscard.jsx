@@ -8,7 +8,7 @@ function CampaignCard({ campaign, onJoin }) {
   return (
     <article className="campaign-card">
 
-      {/* Image */}
+
       <img
         src={campaign.image}
         alt={campaign.title}
@@ -17,22 +17,22 @@ function CampaignCard({ campaign, onJoin }) {
 
       <div className="campaign-card-content">
 
-        {/* Title */}
+
         <h3>{campaign.title}</h3>
 
-        {/* Date */}
+
         <p>
           <strong>Date:</strong>{" "}
           {campaign.date}
         </p>
 
-        {/* Time */}
+
         <p>
           <strong>Time:</strong>{" "}
           {campaign.time}
         </p>
 
-        {/* Location */}
+
         <p className="campaign-location">
           <img
             src={locationIcon}
@@ -43,19 +43,19 @@ function CampaignCard({ campaign, onJoin }) {
           {campaign.location}
         </p>
 
-        {/* City */}
+
         <p>
           <strong>City:</strong>{" "}
           {campaign.city}
         </p>
 
-        {/* Organizer */}
-        <p>
-          <strong>Organizer:</strong>{" "}
-          {campaign.organizer}
-        </p>
+        {
+          <p>
+            <strong>Organizer:</strong>{" "}
+            {campaign.organizer}
+          </p>
 
-        {/* Blood Groups */}
+        }
         <h4>
           <img
             src={bloodIcon}
@@ -76,13 +76,12 @@ function CampaignCard({ campaign, onJoin }) {
 
         </div>
 
-        {/* Spots */}
+        
         <p className="campaign-spots">
           <strong>{campaign.spots}</strong>{" "}
           spots available
         </p>
-
-        {/* Button */}
+        
         <Button onClick={onJoin}>
           Join Campaign
         </Button>

@@ -1,12 +1,8 @@
 .campaign-card {
   background: white;
-
   border-radius: 10px;
-
   overflow: hidden;
-
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-
   transition: 0.3s;
 }
 
@@ -14,18 +10,15 @@
   transform: translateY(-4px);
 }
 
-/* Image */
 
 .campaign-card-image {
   width: 100%;
   height: 180px;
-
   object-fit: cover;
-
   display: block;
 }
 
-/* Content */
+
 
 .campaign-card-content {
   padding: 18px;
@@ -33,21 +26,17 @@
 
 .campaign-card-content h3 {
   margin: 0 0 12px;
-
   color: #d62828;
-
   font-size: 20px;
 }
 
 .campaign-card-content p {
   margin: 8px 0;
-
   color: #555;
-
   font-size: 14px;
 }
 
-/* Location */
+
 
 .campaign-location {
   display: flex;
@@ -57,48 +46,36 @@
 .icon {
   width: 18px;
   height: 18px;
-
   object-fit: contain;
-
   margin-right: 6px;
 }
 
-/* Blood Groups */
+
 
 .campaign-card-content h4 {
   display: flex;
   align-items: center;
-
   margin: 18px 0 10px;
-
   color: #333;
 }
 
 .campaign-blood-groups {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 6px;
-
   margin-bottom: 15px;
 }
 
 .campaign-blood-groups span {
   padding: 5px 9px;
-
   background: #ffe5e5;
-
   color: #d62828;
-
   border-radius: 5px;
-
   font-size: 13px;
-
   font-weight: bold;
 }
 
-/* Spots */
+
 
 .campaign-spots strong {
   color: #d62828;
