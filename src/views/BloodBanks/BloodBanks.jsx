@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BloodBanks.css";
-import bloodbanks from "../../data/bloodbanks.json";
+import bloodbanks from "../../utils/bloodbanks.json";
+import Button from "../../components/Button/Button"; 
 
 const BloodBanks = () => {
   const [search, setSearch] = useState("");
@@ -16,6 +17,7 @@ const BloodBanks = () => {
     <div className="bloodbanks-page">
       <h1 className="page-title">Blood Banks</h1>
 
+      {/* Search Bar */}
       <input
         type="text"
         placeholder="Search by name or city..."
@@ -24,37 +26,45 @@ const BloodBanks = () => {
         onChange={(e) => setSearch(e.target.value)}
       />
 
-
+      {/* Cards */}
       <div className="bloodbanks-grid">
         {filteredBanks.map((bank) => (
           <div key={bank.id} className="bloodbank-card">
+            {/* Image */}
+            <img
+              src={bank.image}
+              alt={bank.name}
+              className="bank-image"
+            />
+
             <h2>{bank.name}</h2>
-            <p>{bank.city}</p>
+            <p>📍 {bank.city}</p>
             <p>📞 {bank.contact}</p>
+            <p>📧 {bank.email}</p>
+            <p>⏰ {bank.timings}</p>
 
-
+            {/* Availability Badges */}
             <div className="availability">
               {bank.availableGroups.map((group) => (
                 <span
                   key={group}
-                  className={`blood-group ${bank.status[group] ? "available" : "not-available"
-                    }`}
+                  className={`blood-group ${
+                    bank.status[group] ? "available" : "not-available"
+                  }`}
                 >
-                  {group}
+                  {group} {bank.status[group] ? "🟢" : "🔴"}
                 </span>
               ))}
             </div>
 
+            {/* Action Buttons using reusable Button */}
             <div className="card-actions">
-              <a href={`tel:${bank.contact}`} className="btn-primary">
-                Call Now
-              </a>
-              <button
-                className="btn-secondary"
-                onClick={() => navigate("/bloodrequest")}
-              >
-                Send Request
-              </button>
+              <Button href={`tel:${bank.contact}`}>
+                📞 Call Now
+              </Button>
+              <Button onClick={() => navigate("/bloodrequest")}>
+                📝 Send Request
+              </Button>
             </div>
           </div>
         ))}

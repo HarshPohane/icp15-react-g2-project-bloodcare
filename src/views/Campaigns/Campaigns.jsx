@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import campaigns from "../../data/campaigns.json";
+import campaigns from "../../utils/campaigns.json";
 import CampaignCard from "../../components/Campaignscard/Campaignscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import "./Campaigns.css";

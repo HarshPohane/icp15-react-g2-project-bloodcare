@@ -1,19 +1,56 @@
 .blood-request-page {
-  background-color: #FFFAF3;
+  background-color: #FFF2DB;
   min-height: 100vh;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 30px;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .page-title {
   text-align: center;
   color: #F62440;
-  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
+.request-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Left side image */
+.request-image-section {
+  flex: 1;
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+}
+
+.request-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #F62440;
+  font-weight: bold;
+}
+
+/* Right side form */
 .blood-request-form {
-  max-width: 500px;
-  margin: 0 auto 30px auto;
+  flex: 1;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -25,12 +62,12 @@
   padding: 10px;
   border: 2px solid #FFE5BF;
   border-radius: 8px;
-  background-color: #FFF2DB;
+  background-color: #FFFAF3;
   font-size: 16px;
 }
 
 .blood-request-form textarea {
-  min-height: 80px;
+  min-height: 100px;
 }
 
 .btn-primary {
@@ -44,74 +81,18 @@
 }
 
 .btn-primary:hover {
-  background-color: #c81d34;
+  background-color: #c81c32;
 }
 
-.list-title {
-  text-align: center;
-  color: #F62440;
-  margin-bottom: 15px;
-}
-
-.request-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.request-card {
-  background: #FFF2DB;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.request-card h3 {
-  color: #F62440;
-  margin-bottom: 10px;
-}
-
-.status.pending {
-  color: #F62440;
-}
-
-.status.in\ progress {
-  color: #ff9800;
-}
-
-.status.fulfilled {
-  color: green;
-}
-
-.card-actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-.btn-secondary {
-  background-color: #FFE5BF;
-  color: #333;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn-danger {
-  background-color: #F62440;
-  color: white;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .card-actions {
+/* Responsive */
+@media (max-width: 768px) {
+  .request-container {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+  }
+
+  .request-image-section,
+  .blood-request-form {
+    max-width: 90%;
   }
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import hospitals from "../../data/hospitals.json";
+import hospitals from "../../utils/hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";

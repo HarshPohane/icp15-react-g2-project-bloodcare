@@ -1,4 +1,4 @@
-import aboutData from "../../data/about.json";
+import aboutData from "../../utils/about.json";
 import "./About.css";
 import React from "react";
 
