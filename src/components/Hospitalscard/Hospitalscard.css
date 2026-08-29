@@ -64,7 +64,7 @@
   font-weight: 1000;
 }
 
-/* Icon Images */
+
 
 .icon {
   width: 20px;
@@ -78,7 +78,7 @@
   object-fit: contain;
 }
 
-/* Emergency */
+
 
 .hospital-emergency,
 .hospital-regular {
@@ -101,7 +101,7 @@
   color: #2e7d32;
 }
 
-/* Blood Groups */
+
 
 .hospital-card-content h4 {
   display: flex;

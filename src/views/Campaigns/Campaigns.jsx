@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import campaigns from "../../utils/campaigns.json";
 import CampaignCard from "../../components/Campaignscard/Campaignscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
+import Searchbar from "../../components/Searchbar/Searchbar";
 import "./Campaigns.css";
 
 function Campaigns() {
@@ -78,26 +79,20 @@ function Campaigns() {
           Join blood donation campaigns and help save lives.
         </p>
 
+        <p className="page-motivation">
+          A single donation can bring hope to families in need. Be part of the movement that keeps communities strong and resilient.
+        </p>
+
       </div>
 
       
       <div className="campaign-filters">
+        <Searchbar
+          search={search}
+          setSearch={setSearch}
+          placeholder="Search campaign or city..."
+        />
 
-        
-        <div className="campaign-search">
-
-          <span>🔍</span>
-
-          <input
-            type="text"
-            placeholder="Search campaign or city..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-
-        </div>
-
-        
         <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -156,7 +151,12 @@ function Campaigns() {
 
       )}
 
+      <p className="page-ending-note">
+        Thank you for helping build a stronger, healthier community through donation and care.
+      </p>
+
     </section>
+    
   );
 }
 
