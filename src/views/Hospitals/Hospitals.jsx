@@ -3,7 +3,8 @@ import hospitals from "../../utils/hospitals.json";
 import HospitalCard from "../../components/Hospitalscard/hopstialscard";
 import bloodIcon from "../../components/icon-images/blood-drop.png";
 import emergencyIcon from "../../components/icon-images/emergency.png";
-import searchbar from "../../components/icon-images/search-bar.png";
+import Searchbar from "../../components/Searchbar/Searchbar";
+
 import "./Hospitals.css";
 
 function Hospitals() {
@@ -75,21 +76,12 @@ function Hospitals() {
 
       
       <div className="hospital-filters">
+        <Searchbar
+          search={search}
+          setSearch={setSearch}
+          placeholder="Search hospital or city..."
+        />
 
-        
-        <div className="hospital-search">
-          <img src={searchbar} alt="searchbar" />
-
-
-          <input
-            type="text"
-            placeholder="Search hospital or city..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-
-        
         <select
           value={city}
           onChange={(e) => setCity(e.target.value)}
@@ -123,7 +115,7 @@ function Hospitals() {
 
       </div>
 
-      {/* Result */}
+    
       <p className="hospital-result">
         Showing <strong>{filteredHospitals.length}</strong> hospitals
       </p>
