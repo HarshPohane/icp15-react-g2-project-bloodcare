@@ -1,15 +1,20 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
+import { useAuth } from "../../context/AuthContext";
 import "./Login.css";
 
 function Login() {
+  const { login } = useAuth();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Login successful!");
+    login(email, password);
+    navigate("/"); 
   };
 
   return (
