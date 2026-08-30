@@ -60,7 +60,9 @@ const Contact = () => {
           </div>
 
           <div className="heroCircle">
-            🩸
+         <div>
+  <i className="fa-solid fa-droplet"></i>
+</div>   
           </div>
 
           <div className="heroInfo">
@@ -362,7 +364,7 @@ const Contact = () => {
           <div className="locationDetail">
 
             <div className="locationIcon">
-              📍
+              <i className="fa-solid fa-location-dot location-icon"></i>
             </div>
 
             <div>
@@ -375,7 +377,7 @@ const Contact = () => {
           <div className="locationDetail">
 
             <div className="locationIcon">
-              🕐
+              <i className="fa-solid fa-clock clock-icon"></i>
             </div>
 
             <div>
@@ -406,8 +408,9 @@ const Contact = () => {
       <section className="finalBanner">
 
         <div className="finalBlood">
-          🩸
-        </div>
+<div>
+  <i className="fa-solid fa-droplet"></i>
+</div>           </div>
 
         <div>
           <span>ONE DROP CAN MAKE A DIFFERENCE</span>

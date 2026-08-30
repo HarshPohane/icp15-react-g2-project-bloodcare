@@ -1152,3 +1152,333 @@ margin-top: -20px;
   }
 
 }
+
+/* =========================================
+   DONATION VIDEOS SECTION
+========================================= */
+
+.donation-videos-section {
+  width: 100%;
+ 
+  background: #fffbf7;
+  box-sizing: border-box;
+}
+
+.donation-videos-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.donation-videos-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.donation-small-title {
+  display: inline-block;
+  color: #f62440;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.donation-videos-heading h2 {
+  margin: 0 0 15px;
+  color: #222;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.donation-videos-heading h2 span {
+  color: #f62440;
+}
+
+.donation-videos-heading p {
+  margin: 0;
+  color: #777;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   VIDEO GRID
+========================================= */
+
+.donation-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+/* =========================================
+   VIDEO CARD
+========================================= */
+
+.donation-video-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #f3dfdf;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(70, 20, 20, 0.08);
+  transition: all 0.3s ease;
+}
+
+.donation-video-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(70, 20, 20, 0.15);
+}
+
+
+/* =========================================
+   YOUTUBE VIDEO
+========================================= */
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+
+/* =========================================
+   VIDEO CONTENT
+========================================= */
+
+.video-content {
+  padding: 25px;
+}
+
+.video-content h3 {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 21px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.video-content p {
+  margin: 0 0 18px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   WATCH BUTTON
+========================================= */
+
+.watch-video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #f62440;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.watch-video-btn:hover {
+  color: #c9142d;
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.donation-video-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 55px;
+  padding: 30px 35px;
+
+  background: #fff0f2;
+  border: 1px solid #ffd6dc;
+  border-radius: 20px;
+}
+
+.donation-video-cta h3 {
+  margin: 0 0 8px;
+  color: #222;
+  font-size: 22px;
+  font-weight: 750;
+}
+
+.donation-video-cta p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   DONATE BUTTON
+========================================= */
+
+.donate-now-btn {
+  border: none;
+  outline: none;
+
+  padding: 14px 28px;
+
+  background: #f62440;
+  color: #ffffff;
+
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+.donate-now-btn:hover {
+  background: #d91531;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(246, 36, 64, 0.25);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .donation-videos-section {
+    padding: 65px 5%;
+  }
+
+  .donation-videos-heading h2 {
+    font-size: 36px;
+  }
+
+  .donation-video-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .donation-videos-section {
+    padding: 50px 18px;
+  }
+
+  .donation-videos-heading {
+    margin-bottom: 35px;
+  }
+
+  .donation-small-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .donation-videos-heading h2 {
+    font-size: 29px;
+  }
+
+  .donation-videos-heading p {
+    font-size: 14px;
+  }
+
+  .donation-video-grid {
+    gap: 22px;
+  }
+
+  .donation-video-card {
+    border-radius: 16px;
+  }
+
+  .video-content {
+    padding: 20px;
+  }
+
+  .video-content h3 {
+    font-size: 18px;
+  }
+
+  .video-content p {
+    font-size: 13px;
+  }
+
+  .donation-video-cta {
+    flex-direction: column;
+    text-align: center;
+
+    padding: 25px 20px;
+    margin-top: 40px;
+  }
+
+  .donation-video-cta h3 {
+    font-size: 19px;
+  }
+
+  .donation-video-cta p {
+    font-size: 13px;
+  }
+
+  .donate-now-btn {
+    width: 100%;
+    padding: 13px 20px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .donation-videos-heading h2 {
+    font-size: 26px;
+  }
+
+  .video-content {
+    padding: 17px;
+  }
+
+  .donation-video-cta {
+    padding: 22px 16px;
+  }
+}
