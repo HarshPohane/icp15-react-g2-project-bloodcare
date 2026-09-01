@@ -17,7 +17,7 @@ const BloodBanks = () => {
     <div className="bloodbanks-page">
       <h1 className="page-title">Blood Banks</h1>
 
-      {/* Search Bar */}
+     
       <input
         type="text"
         placeholder="Search by name or city..."
@@ -30,12 +30,7 @@ const BloodBanks = () => {
       <div className="bloodbanks-grid">
         {filteredBanks.map((bank) => (
           <div key={bank.id} className="bloodbank-card">
-            {/* Image */}
-            <img
-              src={bank.image}
-              alt={bank.name}
-              className="bank-image"
-            />
+           
 
             <h2>{bank.name}</h2>
             <p>📍 {bank.city}</p>
@@ -43,7 +38,7 @@ const BloodBanks = () => {
             <p>📧 {bank.email}</p>
             <p>⏰ {bank.timings}</p>
 
-            {/* Availability Badges */}
+      
             <div className="availability">
               {bank.availableGroups.map((group) => (
                 <span
@@ -57,13 +52,13 @@ const BloodBanks = () => {
               ))}
             </div>
 
-            {/* Action Buttons using reusable Button */}
+          
             <div className="card-actions">
               <Button href={`tel:${bank.contact}`}>
-                📞 Call Now
+                 Call Now
               </Button>
               <Button onClick={() => navigate("/bloodrequest")}>
-                📝 Send Request
+                Send Request
               </Button>
             </div>
           </div>

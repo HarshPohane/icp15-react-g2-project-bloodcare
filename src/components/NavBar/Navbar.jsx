@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import Button from "../../components/Button/Button";
 import "./Navbar.css";
 
 function Navbar() {
@@ -64,7 +63,7 @@ function Navbar() {
             </Link>
           )}
           <Link to="/signup" className="signup-btn">
-            Register
+            Signup
           </Link>
         </div>
 

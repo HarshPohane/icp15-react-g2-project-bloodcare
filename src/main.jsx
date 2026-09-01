@@ -30,8 +30,8 @@ createRoot(document.getElementById('root')).render(
 
       <Route path="/bloodrequest" element={<ProtectedRoute><BloodRequest /></ProtectedRoute>} />
       <Route path="/campaigns" element={<ProtectedRoute><Campaigns /></ProtectedRoute>} />
-      <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
-      <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path='/donors' element={<ProtectedRoute><Donors/></ProtectedRoute>}/> 
       <Route path="/find-blood" element={<ProtectedRoute><FindBlood /></ProtectedRoute>} />
       <Route path="/hospitals" element={<ProtectedRoute><Hospitals /></ProtectedRoute>} />

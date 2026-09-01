@@ -7,8 +7,8 @@
     "email": "redcross@bloodcare.org",
     "timings": "9 AM - 6 PM",
     "availableGroups": ["A+", "B+", "O+", "AB+"],
-    "status": { "A+": true, "B+": false, "O+": true, "AB+": true },
-    "image": "redcross_pune.jpg"
+    "status": { "A+": true, "B+": false, "O+": true, "AB+": true }
+    
   },
   {
     "id": 2,
@@ -18,8 +18,8 @@
     "email": "lifecare@bloodcare.org",
     "timings": "24x7",
     "availableGroups": ["A-", "B+", "O-", "AB+"],
-    "status": { "A-": true, "B+": true, "O-": false, "AB+": true },
-    "image": "lifecare_mumbai.jpg"
+    "status": { "A-": true, "B+": true, "O-": false, "AB+": true }
+    
   },
   {
     "id": 3,
@@ -29,8 +29,8 @@
     "email": "vitalflow@bloodcare.org",
     "timings": "10 AM - 8 PM",
     "availableGroups": ["A+", "O+", "B-", "AB-"],
-    "status": { "A+": true, "O+": true, "B-": false, "AB-": true },
-    "image": "vitalflow_nagpur.jpg"
+    "status": { "A+": true, "O+": true, "B-": false, "AB-": true }
+   
   },
   {
     "id": 4,
@@ -40,8 +40,8 @@
     "email": "hemolink@bloodcare.org",
     "timings": "8 AM - 5 PM",
     "availableGroups": ["A+", "B+", "O-", "AB-"],
-    "status": { "A+": false, "B+": true, "O-": true, "AB-": false },
-    "image": "hemolink_aurangabad.jpg"
+    "status": { "A+": false, "B+": true, "O-": true, "AB-": false }
+    
   },
   {
     "id": 5,
@@ -51,8 +51,8 @@
     "email": "central@bloodcare.org",
     "timings": "9 AM - 9 PM",
     "availableGroups": ["A+", "O+", "AB+", "B-"],
-    "status": { "A+": true, "O+": true, "AB+": true, "B-": false },
-    "image": "bloodcare_nashik.jpg"
+    "status": { "A+": true, "O+": true, "AB+": true, "B-": false }
+    
   },
   {
     "id": 6,
@@ -62,7 +62,7 @@
     "email": "hopeblood@bloodcare.org",
     "timings": "7 AM - 7 PM",
     "availableGroups": ["A-", "O-", "B+", "AB-"],
-    "status": { "A-": true, "O-": true, "B+": false, "AB-": true },
-    "image": "hopeblood_kolhapur.jpg"
+    "status": { "A-": true, "O-": true, "B+": false, "AB-": true }
+    
   }
 ]

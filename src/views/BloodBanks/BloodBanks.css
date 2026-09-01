@@ -1,18 +1,20 @@
 .bloodbanks-page {
   padding: 20px;
-  background: #FFFAF3; /* हलका background */
+  background: #fffaf3; 
 }
 
 .page-title {
   text-align: center;
-  color: #F62440; /* Primary red */
+  color: #f62440; 
   margin-bottom: 20px;
 }
 
 .search-bar {
   width: 100%;
+  max-width: 400px;
   padding: 10px;
-  margin: 15px 0;
+  margin: 0 auto 20px auto;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
@@ -24,19 +26,17 @@
 }
 
 .bloodbank-card {
-  background: #fff;
+  background: #fff2db; 
   padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
 .bloodbank-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
-/* Image */
 .bank-image {
   width: 100%;
   height: 160px;
@@ -46,56 +46,57 @@
 }
 
 .availability {
-  margin: 10px 0;
+  margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  
 }
 
 .blood-group {
-  display: inline-block;
-  margin: 5px;
   padding: 6px 12px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .available {
-  background: #d4edda;
-  color: #155724;
+  background: #e0f7e9;
+  color: #2e7d32;
 }
 
 .not-available {
-  background: #f8d7da;
-  color: #721c24;
+  background: #fde0e0;
+  color: #c62828;
 }
 
 .card-actions {
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 12px; 
   margin-top: 12px;
 }
 
-.btn-primary, .btn-secondary {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+.common-button {
+  flex: 1; 
 }
 
-.btn-primary {
-  background: #F62440;
-  color: #fff;
+
+@media (max-width: 600px) {
+  .bloodbanks-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.btn-primary:hover {
-  background: #c81c32;
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .bloodbanks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.btn-secondary {
-  background: #1976d2;
-  color: #fff;
-}
 
-.btn-secondary:hover {
-  background: #125aa0;
+@media (min-width: 901px) {
+  .bloodbanks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
