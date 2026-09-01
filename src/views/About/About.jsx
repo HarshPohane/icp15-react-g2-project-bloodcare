@@ -103,25 +103,26 @@ function About() {
       <section className="about-stat-section">
 
         <div className="about-stat-card">
-          <div>🩸</div>
-          <strong>12</strong>
+<div>
+  <i className="fa-solid fa-droplet"></i>
+</div>          <strong>12</strong>
           <p>Information Topics</p>
         </div>
 
         <div className="about-stat-card">
-          <div>❤️</div>
+          <div><i className="fa-solid fa-heart heart-icon"></i></div>
           <strong>1</strong>
           <p>Shared Mission</p>
         </div>
 
         <div className="about-stat-card">
-          <div>🤝</div>
+          <div><i className="fa-solid fa-handshake handshake-icon"></i></div>
           <strong>100%</strong>
           <p>Community Focus</p>
         </div>
 
         <div className="about-stat-card">
-          <div>🌍</div>
+          <div><i className="fa-solid fa-globe globe-icon"></i></div>
           <strong>∞</strong>
           <p>Hope & Possibilities</p>
         </div>
@@ -129,88 +130,160 @@ function About() {
       </section>
 
       {/* ================= CARDS ================= */}
-      <section className="about-cards-section" id="bloodcare-cards">
 
-        <div className="about-section-heading">
-          <span className="section-label">
-            WHAT WE STAND FOR
-          </span>
+      <section className="donation-videos-section">
+  <div className="donation-videos-container">
 
-          <h2>
-            Discover
-            <span> BloodCare</span>
-          </h2>
+    {/* Heading */}
+    <div className="donation-videos-heading">
+      <span className="donation-small-title">
+        WATCH & LEARN
+      </span>
 
+      <h2>
+        Blood Donation <span>Videos</span>
+      </h2>
+
+      <p>
+        Discover why blood donation is important and how your small
+        contribution can become someone's hope for life.
+      </p>
+    </div>
+
+    {/* Video Cards */}
+    <div className="donation-video-grid">
+
+      {/* Video 1 */}
+      <div className="donation-video-card">
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/CiFoHm7HD94"
+            title="Blood Donation Awareness"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <div className="video-content">
+          <h3>Blood Donation Awareness</h3>
           <p>
-            Explore important information about BloodCare, blood donation,
-            donors, blood groups, safety and community support.
+            Learn about the importance of blood donation and how
+            your contribution can help save lives.
           </p>
+
+          <a
+            href="https://www.youtube.com/watch?v=CiFoHm7HD94"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="watch-video-btn"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </div>
+
+      {/* Video 2 */}
+      <div className="donation-video-card">
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/M5ADyLmmoIc"
+            title="Blood Donation Video"
+            allowFullScreen
+          ></iframe>
         </div>
 
-        <div className="about-card-grid">
+        <div className="video-content">
+          <h3>Importance of Blood Donation</h3>
+          <p>
+            Understand the importance of donating blood and how
+            one donation can make a meaningful difference.
+          </p>
 
-          {aboutData.aboutData.map((item, index) => (
+          <a
+            href="https://www.youtube.com/watch?v=M5ADyLmmoIc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="watch-video-btn"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </div>
 
-            <div className="about-info-card" key={item.id}>
-
-              <div className="about-card-image">
-
-                <img
-                  src={publicCardImages[index] || item.image}
-                  alt={item.title}
-                />
-
-                <div className="image-overlay"></div>
-
-                <span className="about-card-number">
-                  {String(item.id).padStart(2, "0")}
-                </span>
-
-                <span className="about-card-category">
-                  {item.category}
-                </span>
-
-                <div className="about-card-icon">
-                  {icons[index]}
-                </div>
-
-              </div>
-
-              <div className="about-card-content">
-
-                <span className="card-subtitle">
-                  {item.subtitle}
-                </span>
-
-                <h3>
-                  {item.title}
-                </h3>
-
-                <p className="card-description">
-                  {item.description}
-                </p>
-
-                <p className="card-full-content">
-                  {item.content}
-                </p>
-
-                <div className="card-highlight">
-                  <span>✦</span>
-                  <p>{item.highlight}</p>
-                </div>
-
-                
-
-              </div>
-
-            </div>
-
-          ))}
-
+      {/* Video 3 */}
+      <div className="donation-video-card">
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/Yxql1GVPJVk"
+            title="Blood Donation Awareness Video"
+            allowFullScreen
+          ></iframe>
         </div>
 
-      </section>
+        <div className="video-content">
+          <h3>Donate Blood, Save Lives</h3>
+          <p>
+            Spread awareness about blood donation and encourage
+            more people to become blood donors.
+          </p>
 
+          <a
+            href="https://www.youtube.com/watch?v=Yxql1GVPJVk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="watch-video-btn"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </div>
+
+      {/* Video 4 */}
+      <div className="donation-video-card">
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/jmhiHKsEUXU"
+            title="Blood Donation Video"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <div className="video-content">
+          <h3>Be a Blood Donor</h3>
+          <p>
+            Learn how becoming a regular blood donor can help
+            patients and communities in need.
+          </p>
+
+          <a
+            href="https://www.youtube.com/watch?v=jmhiHKsEUXU"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="watch-video-btn"
+          >
+            Watch on YouTube →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="donation-video-cta">
+      <div>
+        <h3>Every Donation Can Save a Life ❤️</h3>
+        <p>
+          Be the reason someone gets another chance at life.
+          Become a blood donor today.
+        </p>
+      </div>
+
+      <button className="donate-now-btn">
+        Donate Now
+      </button>
+    </div>
+
+  </div>
+</section>
       {/* ==================================================
           7 COLUMN TABLE
       ================================================== */}

@@ -4,6 +4,7 @@ import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Home from "./views/Home/Home";
 import BloodBanks from "./views/BloodBanks/BloodBanks";
