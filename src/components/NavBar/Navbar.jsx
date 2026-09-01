@@ -36,12 +36,12 @@ function Navbar() {
             Donors
           </NavLink>
 
-          <NavLink to="/bloodbanks" className="nav-link">
-            Blood Banks
+            <NavLink to="/hospitals" className="nav-link">
+            Hospitals
           </NavLink>
 
-          <NavLink to="/hospitals" className="nav-link">
-            Hospitals
+          <NavLink to="/bloodbanks" className="nav-link">
+            Blood Banks
           </NavLink>
 
           <NavLink to="/campaigns" className="nav-link">
